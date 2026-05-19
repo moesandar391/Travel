@@ -9,8 +9,12 @@
 
 </head>
 
-<body class="bg-gray-50 text-gray-800 px-4 sm:px-6 lg:px-8">
-    <nav class="flex items-center justify-between border-b bg-white p-4 sticky top-0 z-50 shadow-sm">
+<body class="sm:px-6 lg:px-12 relative overflow-x-hidden">
+    <div class="absolute top-0 right-0 -z-10 pointer-events-none w-auto max-w-[750px] md:max-w-[800px]">
+        <img src="images/Decore (1).png" alt="Decore Splash Background" class="w-full h-auto">
+    </div>
+
+    <nav class="w-full flex items-center justify-between sticky top-0 z-50 shadow-none">
         <h1 class="font-extrabold text-5xl text-orange-500 tracking-wide">Jadoo</h1>
         <div class="hidden md:flex items-center gap-6 ml-auto font-medium text-slate-600">
             <a href="#" class="hover:text-orange-500 transition">Destinations</a>
@@ -49,8 +53,15 @@
     <section class="w-full flex flex-col-reverse md:flex-row items-center mt-6 md:mt-12 gap-6 max-h-screen">
         <div class="w-full md:w-1/2 flex flex-col justify-center">
             <p class="text-orange-500 text-sm font-bold tracking-wider mb-4">BEST DESTINATIONS AROUND THE WORLD</p>
-            <h1 class="font-extrabold text-4xl sm:text-5xl lg:text-6xl text-slate-900 leading-tight mb-6">
-                Travel, enjoy <br> and live a new <br> and full life
+            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
+                Travel,
+                <span class="relative inline-block whitespace-nowrap">
+                    enjoy
+                    <img src="images/Decore.png" alt="underline stroke"
+                        class="absolute left-0 -bottom-1 lg:-bottom-2 w-full h-[6px] lg:h-[12px] object-cover pointer-events-none -z-10">
+                </span>
+                <span class="md:block">and live a new</span>
+                <span class="md:block">and full life</span>
             </h1>
             <div class="text-gray-500 space-y-2 max-w-md mb-8">
                 <p>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed
@@ -62,7 +73,7 @@
                     Out More</button>
                 <button
                     class="flex items-center gap-2 hover:text-orange-500 font-medium transition py-2 px-4 rounded-xl">
-                    <img src="images/Play button.png" alt="Play Demo" class="w-8 h-8">
+                    <img src="images/play-button.png" alt="Play Demo" class="w-8 h-8">
                     Play Demo
                 </button>
             </div>
@@ -72,69 +83,113 @@
         </section>
         </div>
     </section>
-    <section class="w-full md:px-4 flex flex-col mt-6 max-h-screen">
-        <div class="relative flex items-center justify-center w-full mb-12">
-            <div class="text-center">
-                <p class="text-sm font-bold text-gray-400 tracking-widest">CATEGORY</p>
-                <h1 class="font-extrabold text-3xl md:text-4xl text-slate-900 mt-2">We Offer Best Services</h1>
-            </div>
-            <img src="images/Group 4.png" alt="Category Image"
-                class="absolute right-4 top-0 w-16 h-16 opacity-20 md:opacity-100">
+    <!-- service section -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+
+        <div class="text-center mb-16">
+            <h5 class="text-gray-500 font-semibold tracking-wider text-sm md:text-base">
+                CATEGORY
+            </h5>
+            <h2 class="text-3xl md:text-5xl font-bold mt-2 text-slate-800">
+                We Offer Best Services
+            </h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-32 w-full max-w-6xl">
-            <div class="relative group">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
+            <!-- card1 -->
+            <div class="relative p-4 max-w-sm mx-auto group w-full">
                 <div
-                    class="w-[250px] relative z-10 flex flex-col items-center gap-8 rounded-[20px] p-6 text-center bg-white shadow-md hover:shadow-xl transition h-full">
-                    <img src="images/Group 48.png" alt="Calculated Weather" class="w-24 h-16 object-contain">
-                    <p class="font-bold text-lg text-slate-800">Calculated Weather</p>
-                    <p class="text-gray-500 text-sm">Build Wicket longer admire do barton vanity itself do in it.</p>
+                    class="absolute bottom-0 left-0 w-28 h-28 bg-orange-500 rounded-[30px] -z-10 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out transform group-hover:-translate-x-2 group-hover:translate-y-2">
                 </div>
-                <img src="images/Rectangle 157.png" alt="Decoration"
-                    class="absolute -bottom-3 -left-3 w-12 h-12 z-0 pointer-events-none transition group-hover:-translate-x-1 group-hover:translate-y-1">
+
+                <div
+                    class="relative bg-white shadow-none rounded-[40px] px-8 py-12 text-center overflow-hidden transition-all duration-300 ease-in-out cursor-pointer group-hover:shadow-xl group-hover:-translate-y-1 active:shadow-sm active:translate-y-0">
+
+
+                    <div class="relative z-10 flex flex-col items-center">
+                        <img src="images/Group 48.png" class="mx-auto mb-8 h-24 object-contain">
+                        <h3 class="font-bold text-gray-800 text-xl mb-4">
+                            Calculated Weather
+                        </h3>
+                        <p class="text-gray-500 text-sm leading-relaxed max-w-[200px]">
+                            Built Wicket longer admire do barton vanity itself do in it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- card2 -->
+            <div class="relative p-4 max-w-sm mx-auto group w-full">
+                <div
+                    class="absolute bottom-0 left-0 w-28 h-28 bg-orange-500 rounded-[30px] -z-10 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out transform group-hover:-translate-x-2 group-hover:translate-y-2">
+                </div>
+
+                <div
+                    class="relative bg-white shadow-none rounded-[40px] px-8 py-12 text-center overflow-hidden transition-all duration-300 ease-in-out cursor-pointer group-hover:shadow-xl group-hover:-translate-y-1 active:shadow-sm active:translate-y-0">
+
+
+                    <div class="relative z-10 flex flex-col items-center">
+                        <img src="images/Group 51.png" class="mx-auto mb-8 h-24 object-contain">
+                        <h3 class="font-bold text-gray-800 text-xl mb-4">
+                            Best Flights
+                        </h3>
+                        <p class="text-gray-500 text-sm leading-relaxed max-w-[200px]">
+                            Engrossed listening. Park gate sell they west hard for the.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- card3 -->
+            <div class="relative p-4 max-w-sm mx-auto group w-full">
+                <div
+                    class="absolute bottom-0 left-0 w-28 h-28 bg-orange-500 rounded-[30px] -z-10 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out transform group-hover:-translate-x-2 group-hover:translate-y-2">
+                </div>
+
+                <div
+                    class="relative bg-white shadow-none rounded-[40px] px-8 py-12 text-center overflow-hidden transition-all duration-300 ease-in-out cursor-pointer group-hover:shadow-xl group-hover:-translate-y-1 active:shadow-sm active:translate-y-0">
+
+
+                    <div class="relative z-10 flex flex-col items-center">
+                        <img src="images/Group 50.png" class="mx-auto mb-8 h-24 object-contain">
+                        <h3 class="font-bold text-gray-800 text-xl mb-4">
+                            Local Events
+                        </h3>
+                        <p class="text-gray-500 text-sm leading-relaxed max-w-[200px]">
+                            Barton vanity itself do in it. Preferred to men it engrossed listening.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- card4 -->
+            <div class="relative p-4 max-w-sm mx-auto group w-full">
+                <div
+                    class="absolute bottom-0 left-0 w-28 h-28 bg-orange-500 rounded-[30px] -z-10 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out transform group-hover:-translate-x-2 group-hover:translate-y-2">
+                </div>
+
+                <div
+                    class="relative bg-white shadow-none rounded-[40px] px-8 py-12 text-center overflow-hidden transition-all duration-300 ease-in-out cursor-pointer group-hover:shadow-xl group-hover:-translate-y-1 active:shadow-sm active:translate-y-0">
+
+
+                    <div class="relative z-10 flex flex-col items-center">
+                        <img src="images/Group 49.png" class="mx-auto mb-8 h-24 object-contain">
+                        <h3 class="font-bold text-gray-800 text-xl mb-4">
+                            Customization
+                        </h3>
+                        <p class="text-gray-500 text-sm leading-relaxed max-w-[200px]">
+                            We deliver outsource aviation services for military customers.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="relative group">
-                <div
-                    class="w-[250px] relative z-10 flex flex-col items-center gap-5 rounded-[20px] p-6 text-center bg-white shadow-md hover:shadow-xl transition h-full">
-                    <img src="images/Group 51.png" alt="Best Flights" class="w-32 h-20 object-contain">
-                    <p class="font-bold text-lg text-slate-800">Best Flights</p>
-                    <p class="text-gray-500 text-sm pt-2">Engrossed listening. Park gate sell they went hard for the.</p>
-                </div>
-                <img src="images/Rectangle 157.png" alt="Decoration"
-                    class="absolute -bottom-3 -left-3 w-12 h-12 z-0 pointer-events-none transition group-hover:-translate-x-1 group-hover:translate-y-1">
-            </div>
-
-            <div class="relative group">
-                <div
-                    class="w-[250px] relative z-10 flex flex-col items-center gap-8 rounded-[20px] p-6 text-center bg-white shadow-md hover:shadow-xl transition h-full">
-                    <img src="images/Group 50.png" alt="Local Events" class="w-24 h-16 object-contain">
-                    <p class="font-bold text-lg text-slate-800">Local Events</p>
-                    <p class="text-gray-500 text-sm">Barton vanity itself do in it. Prefferd to men it engrossed listening.</p>
-                </div>
-                <img src="images/Rectangle 157.png" alt="Decoration"
-                    class="absolute -bottom-3 -left-3 w-12 h-12 z-0 pointer-events-none transition group-hover:-translate-x-1 group-hover:translate-y-1">
-            </div>
-
-            <div class="relative group">
-                <div
-                    class="w-[250px] relative z-10 flex flex-col items-center gap-8 rounded-[20px] p-6 text-center bg-white shadow-md hover:shadow-xl transition h-full">
-                    <img src="images/Group 49.png" alt="Customization" class="w-24 h-16 object-contain">
-                    <p class="font-bold text-lg text-slate-800">Customization</p>
-                    <p class="text-gray-500 text-sm">We deliver outsourced aviation services for military customers.</p>
-                </div>
-                <img src="images/Rectangle 157.png" alt="Decoration"
-                    class="absolute -bottom-3 -left-3 w-12 h-12 z-0 pointer-events-none transition group-hover:-translate-x-1 group-hover:translate-y-1">
-            </div>
         </div>
-
     </section>
-    <section class="w-full md:px-10 mt-12 max-h-screen">
+    <!-- Top destination -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
         <div class="text-center mb-12">
             <p class="text-sm font-bold text-gray-400 tracking-widest">TOP SELLING</p>
             <h1 class="font-extrabold text-3xl md:text-4xl text-slate-900 mt-2">Top Destinations</h1>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 max-w-6xl mx-auto">
 
             <div
                 class="w-full max-w-[340px] rounded-3xl bg-white shadow-lg overflow-hidden hover:scale-105 transition duration-300">
@@ -182,7 +237,8 @@
             </div>
         </div>
     </section>
-    <section class="max-w-6xl mx-auto px-6 py-16 flex flex-col lg:flex-row gap-16 items-center">
+    <!-- Easy and fast -->
+    <section class="max-w-6xl mx-auto px-6 py-16 flex flex-col lg:flex-row">
         <div class="w-full lg:w-1/2">
             <p class="text-sm font-bold text-gray-400 tracking-widest uppercase">Easy and Fast</p>
             <h1 class="font-extrabold text-3xl md:text-4xl text-slate-900 mt-2 mb-8 leading-tight">Book Your Next Trip
@@ -266,8 +322,8 @@
             </div>
         </div>
     </section>
-
-    <section class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row gap-12 items-start">
+    <!-- Testimonials -->
+    <section class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row">
         <div class="w-full md:w-2/5">
             <p class="text-sm font-bold text-gray-400 tracking-widest uppercase">Testimonials</p>
             <h1 class="font-extrabold text-3xl md:text-4xl text-slate-900 mt-2 mb-6 leading-tight">What People
@@ -300,7 +356,7 @@
 
         </div>
     </section>
-
+    <!-- Logo -->
     <section class="mt-10 py-6 px-4 rounded-2xl shadow-sm bg-white">
         <div
             class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 items-center justify-items-center opacity-60 gap-6 md:gap-8">
@@ -311,27 +367,39 @@
             <img src="images/image 31.png" alt="Brand 5" class="w-full max-w-[120px] h-auto object-contain">
         </div>
     </section>
-
-    <section class="max-w-4xl mx-auto my-16 px-6">
+    <!-- Subscribe -->
+    <section class="max-w-6xl my-16 px-6">
         <div
             class="bg-red-50/70 border border-red-100/40 rounded-3xl rounded-tl-[40px] md:rounded-tl-[80px] p-8 md:p-14 text-center relative overflow-visible shadow-sm">
             <img src="images/Group 77.png" alt=""
                 class="absolute -top-6 -right-6 w-14 h-14 rounded-full shadow-md border border-white">
+            <img src="images/Group 5.png" alt="Decoration Grid"
+                class="absolute -bottom-14 -right-16 w-24 h-24 md:w-32 md:h-32 object-contain z-0 pointer-events-none opacity-80">
+
             <h1 class="font-bold text-xl md:text-2xl text-slate-800 max-w-xl mx-auto leading-relaxed">Subscribe to
                 get
                 information, latest news and other interesting offers about Jadoo</h1>
 
-            <form class="flex flex-col sm:flex-row gap-4 justify-center mt-10 max-w-md mx-auto w-full">
-                <div class="relative w-full">
-                    <input type="email" placeholder="Your email"
-                        class="w-full p-3 pl-6 border border-gray-200 rounded-xl bg-white outline-none focus:border-orange-400 transition shadow-inner text-sm">
+            <form
+                class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10 max-w-lg mx-auto w-full px-4">
+                <div class="relative w-full sm:flex-1">
+                    <!-- Email Icon -->
+                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 select-none">
+                        ✉️
+                    </span>
+                    <input type="email" placeholder="Your email" required
+                        class="w-full p-4 pl-11 border border-gray-200 rounded-xl bg-white outline-none focus:border-orange-400 transition shadow-inner text-sm">
                 </div>
+
                 <button type="submit"
-                    class="bg-orange-500 text-white font-semibold py-3 px-8 rounded-xl hover:bg-orange-600 transition shadow-md whitespace-nowrap text-sm">Subscribe</button>
+                    class="w-full sm:w-auto bg-orange-500 text-white font-semibold py-4 px-8 rounded-xl hover:bg-orange-600 transition shadow-md whitespace-nowrap text-sm cursor-pointer">
+                    Subscribe
+                </button>
             </form>
+
         </div>
     </section>
-
+    <!-- footer -->
     <footer class="max-w-7xl mx-auto px-6 py-12 border-t border-gray-100">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
             <div class="space-y-4">
@@ -367,26 +435,40 @@
                 <div class="flex gap-3">
                     <a href="#"
                         class="w-9 h-9 rounded-full shadow-sm flex items-center justify-center bg-white border hover:scale-105 transition"><img
-                            src="images/Social.png" alt="" class="w-4 h-4 object-contain"></a>
+                            src="images/facebook.png" alt="" class="w-40 h-40 object-contain"></a>
                     <a href="#"
                         class="w-9 h-9 rounded-full shadow-sm flex items-center justify-center bg-white border hover:scale-105 transition"><img
-                            src="images/Social (1).png" alt="" class="w-4 h-4 object-contain"></a>
+                            src="images/instagram.png" alt="" class="w-4 h-4 object-contain"></a>
                     <a href="#"
                         class="w-9 h-9 rounded-full shadow-sm flex items-center justify-center bg-white border hover:scale-105 transition"><img
-                            src="images/Social (2).png" alt="" class="w-4 h-4 object-contain"></a>
+                            src="images/twitter.png" alt="" class="w-4 h-4 object-contain"></a>
                 </div>
-                <p class="text-gray-400 text-sm font-medium tracking-wide">Discover our app</p>
-                <div class="flex gap-3 pt-1">
+                <p class="text-gray-500 font-medium text-sm mt-6">Discover our app</p>
+                <div class="flex gap-3 mt-4">
                     <button
-                        class="bg-black hover:bg-slate-900 transition text-white px-4 py-2 rounded-xl flex items-center justify-center h-9 w-28"><img
-                            src="images/Google Play.png" alt="Google Play" class="h-full object-contain"></button>
+                        class="bg-black hover:bg-gray-900 text-white py-4 px-6 rounded-full flex items-center gap-2.5 transition shadow-md w-[120px] h-[42px]">
+                        <img src="images/google-play 1.png" alt="Google Play" class="h-5 w-auto flex-shrink-0">
+                        <div class="flex flex-col text-left leading-tight">
+                            <span class="text-[7px] tracking-wider uppercase text-gray-400 font-bold">GET IT ON</span>
+                            <span class="text-[11px] font-semibold tracking-tight text-white whitespace-nowrap">Google
+                                Play</span>
+                        </div>
+                    </button>
+
                     <button
-                        class="bg-black hover:bg-slate-900 transition text-white px-4 py-2 rounded-xl flex items-center justify-center h-9 w-28"><img
-                            src="images/Play Store.png" alt="App Store" class="h-full object-contain"></button>
+                        class="bg-black hover:bg-gray-900 text-white py-4 px-6 rounded-full flex items-center gap-2.5 transition shadow-md w-[120px] h-[42px]">
+                        <img src="images/apple (2) 1.png" alt="App Store" class="h-5 w-auto flex-shrink-0">
+                        <div class="flex flex-col text-left leading-tight">
+                            <span class="text-[7px] tracking-wider text-gray-400 font-medium">Available on the</span>
+                            <span class="text-[11px] font-semibold tracking-tight text-white whitespace-nowrap">App
+                                Store</span>
+                        </div>
+                    </button>
                 </div>
             </div>
         </div>
-        <p class="text-center text-gray-400 text-xs mt-16 font-medium">All rights reserved @jadoo.co</p>
+        <p class="text-center text-gray-400 text-sm mt-16 pt-8 border-t border-gray-50">All rights reserved @jadoo.co
+        </p>
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function () {

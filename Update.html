@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency - Responsive</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="overflow-x-hidden bg-white text-gray-800">
+
+    <!-- Background Shape -->
+    <div class="absolute top-0 right-0 -z-10 w-[300px] sm:w-[500px] lg:w-[700px]">
+        <img src="images/Decore (1).png" alt="" class="w-full h-auto object-contain">
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-4 flex items-center justify-between">
+
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-orange-500">
+                Jadoo
+            </h1>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-8 text-gray-700 font-medium">
+                <a href="#" class="hover:text-orange-500 transition">Destinations</a>
+                <a href="#" class="hover:text-orange-500 transition">Hotels</a>
+                <a href="#" class="hover:text-orange-500 transition">Flights</a>
+                <a href="#" class="hover:text-orange-500 transition">Bookings</a>
+                <a href="#" class="hover:text-orange-500 transition">Login</a>
+
+                <button
+                    class="border border-orange-500 px-5 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition">
+                    Sign Up
+                </button>
+
+                <select class="border rounded-md px-2 py-1 text-sm">
+                    <option>EN</option>
+                    <option>FR</option>
+                </select>
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="menu-btn" class="lg:hidden text-3xl text-gray-700">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden flex-col gap-5 px-6 py-6 bg-white border-t shadow-xl text-center">
+            <a href="#" class="hover:text-orange-500">Destinations</a>
+            <a href="#" class="hover:text-orange-500">Hotels</a>
+            <a href="#" class="hover:text-orange-500">Flights</a>
+            <a href="#" class="hover:text-orange-500">Bookings</a>
+            <a href="#" class="hover:text-orange-500">Login</a>
+
+            <button class="bg-orange-500 text-white py-3 rounded-lg">
+                Sign Up
+            </button>
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-12 lg:py-20 flex flex-col-reverse lg:flex-row items-center gap-12">
+
+        <!-- Left -->
+        <div class="w-full lg:w-1/2 text-center lg:text-left">
+
+            <p class="text-orange-500 font-bold tracking-widest text-sm mb-4">
+                BEST DESTINATIONS AROUND THE WORLD
+            </p>
+
+            <h1
+                class="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight text-slate-900">
+                Travel,
+                <span class="relative inline-block">
+                    enjoy
+                    <img src="images/Decore.png"
+                        class="absolute left-0 bottom-0 w-full h-2 object-cover -z-10">
+                </span>
+                and live a new and full life
+            </h1>
+
+            <p class="text-gray-500 mt-6 max-w-lg mx-auto lg:mx-0 leading-7">
+                Built Wicket longer admire do barton vanity itself do in it.
+                Preferred to sportsmen it engrossed listening.
+            </p>
+
+            <div
+                class="flex flex-col sm:flex-row gap-5 mt-8 justify-center lg:justify-start">
+
+                <button
+                    class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl shadow-lg transition">
+                    Find Out More
+                </button>
+
+                <button
+                    class="flex items-center justify-center gap-3 font-medium hover:text-orange-500 transition">
+                    <img src="images/play-button.png" class="w-10 h-10">
+                    Play Demo
+                </button>
+            </div>
+        </div>
+
+        <!-- Right -->
+        <div class="w-full lg:w-1/2 flex justify-center">
+            <img src="images/travel.png"
+                class="w-full max-w-md sm:max-w-lg lg:max-w-xl object-contain">
+        </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16">
+
+        <div class="text-center mb-14">
+            <p class="text-gray-500 font-semibold tracking-widest">CATEGORY</p>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-3">
+                We Offer Best Services
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Card -->
+            <div
+                class="bg-white rounded-[35px] p-8 text-center shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="images/Group 48.png"
+                    class="h-24 mx-auto mb-6 object-contain">
+                <h3 class="font-bold text-xl mb-4">Calculated Weather</h3>
+                <p class="text-gray-500 text-sm leading-6">
+                    Built Wicket longer admire do barton vanity itself do in it.
+                </p>
+            </div>
+
+            <!-- Card -->
+            <div
+                class="bg-white rounded-[35px] p-8 text-center shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="images/Group 51.png"
+                    class="h-24 mx-auto mb-6 object-contain">
+                <h3 class="font-bold text-xl mb-4">Best Flights</h3>
+                <p class="text-gray-500 text-sm leading-6">
+                    Engrossed listening. Park gate sell they west hard for the.
+                </p>
+            </div>
+
+            <!-- Card -->
+            <div
+                class="bg-white rounded-[35px] p-8 text-center shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="images/Group 50.png"
+                    class="h-24 mx-auto mb-6 object-contain">
+                <h3 class="font-bold text-xl mb-4">Local Events</h3>
+                <p class="text-gray-500 text-sm leading-6">
+                    Barton vanity itself do in it. Preferred to men it engrossed.
+                </p>
+            </div>
+
+            <!-- Card -->
+            <div
+                class="bg-white rounded-[35px] p-8 text-center shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                <img src="images/Group 49.png"
+                    class="h-24 mx-auto mb-6 object-contain">
+                <h3 class="font-bold text-xl mb-4">Customization</h3>
+                <p class="text-gray-500 text-sm leading-6">
+                    We deliver outsource aviation services for military customers.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= DESTINATIONS ================= -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16">
+
+        <div class="text-center mb-12">
+            <p class="text-gray-400 font-bold tracking-widest">TOP SELLING</p>
+            <h2 class="text-3xl sm:text-4xl font-extrabold mt-2">
+                Top Destinations
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- Card -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-lg hover:scale-105 transition duration-300">
+                <img src="images/destination1.png"
+                    class="w-full h-72 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between font-bold text-lg">
+                        <p>Rome, Italy</p>
+                        <p>$5.42k</p>
+                    </div>
+
+                    <div class="flex items-center gap-2 mt-4 text-gray-500">
+                        <img src="images/navigation 1.png" class="w-4 h-4">
+                        <p>10 Days Trip</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-lg hover:scale-105 transition duration-300">
+                <img src="images/destination2.jpg"
+                    class="w-full h-72 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between font-bold text-lg">
+                        <p>London, UK</p>
+                        <p>$4.2k</p>
+                    </div>
+
+                    <div class="flex items-center gap-2 mt-4 text-gray-500">
+                        <img src="images/navigation 1.png" class="w-4 h-4">
+                        <p>12 Days Trip</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-lg hover:scale-105 transition duration-300">
+                <img src="images/destination3.png"
+                    class="w-full h-72 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between font-bold text-lg">
+                        <p>Full Europe</p>
+                        <p>$15k</p>
+                    </div>
+
+                    <div class="flex items-center gap-2 mt-4 text-gray-500">
+                        <img src="images/navigation 1.png" class="w-4 h-4">
+                        <p>28 Days Trip</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SUBSCRIBE ================= -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 py-16">
+
+        <div
+            class="bg-orange-50 rounded-[40px] p-8 sm:p-12 lg:p-16 text-center relative overflow-hidden">
+             <!-- TOP IMAGE -->
+            <img src="images/Group 77.png"
+                alt=""
+                class="absolute -top-5 -right-5 w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-md border border-white z-20">
+
+            <!-- BOTTOM IMAGE -->
+            <img src="images/Group 5.png"
+                alt="Decoration Grid"
+                class="absolute bottom-0 right-0 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain z-10 pointer-events-none opacity-80">
+            <h2
+                class="text-2xl sm:text-3xl font-bold text-slate-800 max-w-3xl mx-auto leading-relaxed">
+                Subscribe to get information, latest news and other interesting
+                offers about Jadoo
+            </h2>
+
+            <form
+                class="mt-10 flex flex-col lg:flex-row gap-4 max-w-2xl mx-auto">
+
+                <div class="relative w-full sm:flex-1">
+
+                    <span
+                        class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 select-none">
+                        ✉️
+                    </span>
+
+                    <input type="email"
+                        placeholder="Your email"
+                        required
+                        class="w-full p-4 pl-11 border border-gray-200 rounded-xl bg-white outline-none focus:border-orange-400 transition shadow-inner text-sm">
+                </div>
+                <button
+                    class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-semibold transition">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t">
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+
+            <div>
+                <h2 class="text-4xl font-extrabold text-slate-900">Jadoo.</h2>
+
+                <p class="text-gray-500 mt-4 leading-7">
+                    Book your trip in minutes, get full control for much longer.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-lg mb-4">Company</h3>
+
+                <ul class="space-y-3 text-gray-500">
+                    <li><a href="#" class="hover:text-orange-500">About</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Careers</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Mobile</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-lg mb-4">Contact</h3>
+
+                <ul class="space-y-3 text-gray-500">
+                    <li><a href="#" class="hover:text-orange-500">Help / FAQ</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Press</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Affiliates</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-lg mb-4">More</h3>
+
+                <ul class="space-y-3 text-gray-500">
+                    <li><a href="#" class="hover:text-orange-500">Airline Fees</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Airline</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Low Fare Tips</a></li>
+                </ul>
+            </div>
+
+            <div>
+
+                <div class="flex gap-4">
+                    <img src="images/facebook.png"
+                        class="w-10 h-10 object-contain">
+                    <img src="images/instagram.png"
+                        class="w-10 h-10 object-contain">
+                    <img src="images/twitter.png"
+                        class="w-10 h-10 object-contain">
+                </div>
+
+                <p class="mt-6 text-gray-500 font-medium">
+                    Discover our app
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-4">
+
+                    <button
+                        class="bg-black text-white px-5 py-3 rounded-full flex items-center gap-3">
+                        <img src="images/google-play 1.png" class="w-5">
+                        Google Play
+                    </button>
+
+                    <button
+                        class="bg-black text-white px-5 py-3 rounded-full flex items-center gap-3">
+                        <img src="images/apple (2) 1.png" class="w-5">
+                        App Store
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t py-6 text-center text-gray-400 text-sm">
+            All rights reserved @jadoo.co
+        </div>
+    </footer>
+
+    <!-- ================= MOBILE MENU SCRIPT ================= -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            mobileMenu.classList.toggle("flex");
+        });
+    </script>
+
+</body>
+
+</html>
