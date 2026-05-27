@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiet Mind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white">
+    <main class="flex">
+        <!-- left side -->
+        <aside class="bg-slate-200 hidden md:fixed md:w-64 md:h-full md:flex flex-col md:p-4">
+            <div class="flex">
+                <img src="images/16167184.png" alt="Logo" class="rounded-lg bg-emerald-200 w-12 h-12 p-2">
+                <div>
+                    <h1 class="font-semibold text-2xl text-green-600">QuietMind</h1>
+                    <p class="text-slate-400">Beginner's Haven</p>
+                </div>
+            </div>
+            <div class="my-8">
+                <button class="text-white bg-green-800 w-full rounded-2xl shadow-md p-2 font-semibold">&#x002B;<span
+                        class="pl-2">New Note</span> </button>
+                <!-- Library -->
+                <div>
+                    <p class="text-slate-500 uppercase tracking-wider py-2">library</p>
+                    <div class="flex flex-col gap-3">
+                        <a href="" class="text-slate-500 rounded-lg hover:bg-emerald-500 p-2 flex gap-2"><img
+                                src="images/document.png" alt="" class="w-6">Notes</a>
+                        <a href="" class="text-slate-500 rounded-lg hover:bg-emerald-500 p-2 flex gap-2"><img
+                                src="images/folder.png" alt="" class="w-6">Categories</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- favourites -->
+            <div class="flex-1 flex flex-col gap-3">
+                <p class="text-slate-600 uppercase tracking-wider">favorites</p>
+                <div class="flex items-center gap-2">
+                    <span class="h-2 w-2 rounded-full bg-green-800"></span>
+                    <a href="" class="text-slate-500 hover:text-green-400">Personal</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="h-2 w-2 rounded-full bg-green-800"></span>
+                    <a href="" class="text-slate-500 hover:text-green-400">Creative Work</a>
+                </div>
+            </div>
+            <!-- Bottom -->
+            <div class="py-4 border-t border-slate-300 flex flex-col gap-3">
+                <a href="" class="text-slate-500 flex gap-2 hover:text-green-600"><img src="images/setting.png" alt=""
+                        class="w-6 text-slate-500">Settings</a>
+                <a href="" class="text-slate-500 flex gap-2 hover:text-green-600"><img src="images/archive.png" alt=""
+                        class="w-6 text-slate-500">Archive</a>
+                <a href="" class="text-slate-500 flex gap-2 hover:text-green-600"><img src="images/help.png" alt=""
+                        class="w-6 text-slate-500">Help</a>
+            </div>
+        </aside>
+        <!-- right side -->
+        <section class="flex-1 md:ml-64 px-6">
+            <!-- header -->
+            <div class="flex sticky bg-white top-0 items-center justify-between w-full mb-6">
+                <input type="search" placeholder="🔍 Search your thoughts..."
+                    class="rounded-2xl border bg-slate-100 w-2/3 p-2"></input>
+                <div class="flex gap-6 items-center">
+                    <button
+                        class="text-green-900 px-4 py-2 rounded-lg hover:bg-orange-200 font-bold hidden md:flex flex-cols">&#x002B;<span
+                            class="pl-2">New Note</span>
+                    </button>
+                    <img src="images/Image.png" alt="" class="w-10">
+                </div>
+            </div>
+            <!-- good morning -->
+            <div class="grid grid-cols-1 md:grid-cols-3 mb-6">
+                <div class="col-span-2">
+                    <h1 class="font-bold text-4xl">Good morning, Julian.</h1>
+                    <p class="text-slate-500">Take a breath. What's on your mind today?</p>
+                </div>
+                <div class="flex justify-end items-center gap-2">
+                    <button
+                        class="text-slate-500 rounded-xl hover:bg-lime-500 shadow-md px-4 py-2 flex gap-2 items-center"><img
+                            src="images/recent.png" alt="" class="w-6 h-6">Recent</button>
+                    <button
+                        class="text-slate-500 rounded-xl hover:bg-lime-500 shadow-md px-4 py-2 flex gap-2 items-center"><img
+                            src="images/layout.png" alt="" class="w-4 h-4">Layout</button>
+                </div>
+            </div>
+
+            <section class="grid grid-cols-2 md:grid-cols-3 gap-4 w-full mb-6">
+
+                <!-- card 1 -->
+                <div class="rounded-md border-2 col-span-2 bg-slate-200 shadow-lg p-6">
+
+                    <button class="bg-green-800 text-white px-3 py-1 rounded-full text-base font-medium shadow">Creative
+                        Work</button>
+                    <span class="text-slate-500">2 hours ago</span>
+
+                    <h1 class="font-semibold text-xl my-6">The Philosophy of Quiet Productivity</h1>
+                    <p class="text-slate-500 mb-6">In a world that never stops shouting, there is a profound power in
+                        finding
+                        silence. This morning I'm reflecting on how we can built tools that don't demand attention, but
+                        rather
+                        reward it...</p>
+                    <div>
+                        <button class="rounded-xl bg-gray-300 shadow-md px-4 text-green-700">#mindfulness</button>
+                        <button class="rounded-xl bg-gray-300 shadow-md px-4">#design-ethics</button>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="rounded-lg shadow-lg p-6">
+                    <div class="flex justify-between">
+                        <button class="rounded-xl text-green-700 shadow-md bg-gray-300 px-4 text-center">Ideas</button>
+                        <img src="images/pin.png" alt="" class="w-4 h-4">
+                    </div>
+
+                    <h1 class="font-semibold text-xl my-6">Morning Ritual Ideas</h1>
+                    <p class="text-slate-500">1. Cold water therapy</p>
+                    <p class="text-slate-500">2. 5 minutes of focused breathing</p>
+                    <p class="text-slate-500 mb-6">3. tea ceremony without screens...</p>
+                    <button class="rounded-xl shadow-md bg-gray-300 px-4 text-center">#wellness</button>
+
+                </div>
+            </section>
+
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- card 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg flex flex-col justify-between">
+                    <div class="relative w-full">
+                        <img src="images/light.jpg" alt="office" class="w-full h-48 object-cover">
+                        <span
+                            class="absolute bottom-0 translate-y-1/2 left-6 z-10 bg-green-800 text-white px-3 py-1 rounded-full text-base font-medium shadow">
+                            Work
+                        </span>
+                    </div>
+                    <div class="p-6 pt-8">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Office Redesign Notes</h3>
+                        <p class="text-gray-500 leading-7">Need to prioritize ergonomic comfort and natural light
+                            diffusion...</p>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="rounded-lg shadow-lg p-6">
+                    <button
+                        class="rounded-xl text-green-700 shadow-lg bg-gray-300 px-4 text-center mb-6">Personal</button>
+                    <h1 class="font-semibold text-xl">Weekend Grocery List</h1>
+                    <div class="flex items-center gap-2">
+                        <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                        <span class="text-slate-500">Fresh ginger & mint</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                        <span class="text-slate-500">Organic honey</span>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="rounded-lg shadow-lg p-6">
+                    <div class="flex justify-between mb-6">
+                        <button class="rounded-xl text-green-700 shadow-md bg-gray-300 px-4 text-center">Work</button>
+                        <span class="text-slate-500">Mar 12</span>
+                    </div>
+                    <h1 class="font-semibold text-xl">Project Alpha Review</h1>
+                    <p>The feedback from the initial user group was surprisingly positive regarding the soft-focus UI...
+                    </p>
+                </div>
+            </section>
+        </section>
+        <button
+            class="md:hidden fixed bottom-4 right-6 w-14 border-t border-gray-300 bg-green-900 text-white py-4 flex items-center justify-center z-50 shadow-lg rounded-full p-2">
+            ➕
+        </button>
+    </main>
+</body>
+
+</html>

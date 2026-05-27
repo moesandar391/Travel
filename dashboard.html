@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <section class="h-screen overflow-hidden">
+        <aside id="sidebar"
+            class="fixed md:translate-x-0 h-full left-0 z-50 w-56 bg-gray-700 flex flex-col justify-between transform -translate-x-full transition-transform duration-300 ease-in-out">
+            <!-- <aside id="sidebar" class="hidden lg:flex lg:w-72 h-screen bg-gray-800 shadow-md  flex-col justify-between"></aside> -->
+            <div>
+                <div
+                    class="p-4 text-xl text-white bg-slate-900 font-bold border-b border-slate-900 flex items-center justify-center mb-4">
+                    <img src="images/smartphone.png" alt="Phone" class="w-7">
+                    <h1 class="hover:text-indigo-500">MobileShop</h1>
+                    <button id="close-sidebar" class="text-gray-400 hover:text-white md:hidden">
+                        ✕
+                    </button>
+                </div>
+                <p class="text-md uppercase text-slate-300 mb-4 px-4">Management</p>
+                <nav>
+                    <ul class="text-slate-300 text-xl space-y-2 px-4">
+                        <li><a href="" class="hover:bg-purple-400 rounded-lg p-3 flex items-center">Dashboard</a></li>
+                        <li><a href="" class="hover:bg-purple-400 rounded-lg p-3 flex items-center">Products</a></li>
+                        <li><a href="" class="hover:bg-purple-400 rounded-lg p-3 flex items-center">Orders</a></li>
+                        <li><a href="" class="hover:bg-purple-400 rounded-lg p-3 flex items-center">Users</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="p-2 border-t border-slate-800">
+                <button
+                    class="w-full flex items-center justify-center text-xl px-4 py-2 bg-slate-600 hover:bg-blue-600 text-slate-300 rounded-lg">
+                    Logout
+                </button>
+
+            </div>
+        </aside>
+
+        <div id="sidebarBackdrop" class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 z-40 "></div>
+        <!-- main -->
+        <div class="flex-1 min-w-0 md:ml-56">
+            <nav class="bg-white shadow-sm px-6 py-4 flex items-center gap-4 mb-4">
+                <button id="menu-btn" class="md:hidden text-slate-700 hover:text-slate-900 focus:outline-none">
+                    ☰
+                </button>
+                <h1 class="text-gray-600 font-bold text-xl">Dashboard</h1>
+            </nav>
+            <div class="px-4">
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-2 mb-4">
+                    <div class="bg-white rounded-lg p-2 shadow-md flex gap-2">
+                        <img src="images/dollar.png" alt="" class="w-12 h-12 border rounded-md bg-green-300 p-2">
+                        <div>
+                            <p class="text-gray-400">Totals Sales</p>
+                            <p class="font-bold text-2xl">$0.00</p>
+                        </div>
+                    </div>
+                    <div class="bg-white-400 rounded-lg p-2 shadow-md flex gap-2">
+                        <img src="images/add-to-cart.png" alt="" class="w-12 h-12 border rounded-md bg-blue-300 p-2">
+                        <div>
+                            <p class="text-gray-400">Total Orders</p>
+                            <p class="font-bold text-2xl">0</p>
+                        </div>
+                    </div>
+                    <div class="bg-white-400 rounded-lg p-2 shadow-md flex gap-2">
+                        <img src="images/users.png" alt="" class="w-12 h-12 border rounded-md bg-purple-300 p-2">
+                        <div>
+                            <p class="text-gray-400">Customers</p>
+                            <p class="font-bold text-2xl">1</p>
+                        </div>
+                    </div>
+                    <div class="bg-white-400 rounded-lg p-2 shadow-md flex gap-2">
+                        <img src="images/limitation.png" alt="" class="w-12 h-12 border rounded-md bg-red-300 p-2">
+                        <div>
+                            <p class="text-gray-400">Low Stock Items</p>
+                            <p class="font-bold text-2xl">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="bg-white flex rounded-t-xl justify-between p-3 border-b">
+                        <p class="font-semibold text-base text-gray-400">Recent Orders</p>
+                        <a href="" class="text-purple-400">View all >></a>
+                    </div>
+                    <!-- <div class="max-h-40 border-b w-full"> -->
+                    <table class="bg-white w-full text-left uppercase border-b text-gray-400">
+                            <tr>
+                            <th class=" px-3 py-2">order id</th>
+                        <th class="px-3 py-2">customer</th>
+                        <th class="px-3 py-2">date</th>
+                        <th class="px-3 py-2">total</th>
+                        <th class="px-3 py-2">status</th>
+                        </tr>
+                    </table>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const menuBtn = document.getElementById('menu-btn');
+        const closeSidebar = document.getElementById('close-sidebar');
+        const sidebarBackdrop = document.getElementById('sidebarBackdrop');
+        function openMenu() {
+            sidebar.classList.remove('-translate-x-full');
+            sidebarBackdrop.classList.remove('opacity-0', 'pointer-events-none');
+            sidebarBackdrop.classList.add('opacity-50', 'pointer-events-auto');
+        }
+
+        function closeMenu() {
+            sidebar.classList.add('-translate-x-full');
+            sidebarBackdrop.classList.remove('opacity-50', 'pointer-events-auto');
+            sidebarBackdrop.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        menuBtn.addEventListener('click', openMenu);
+        closeSidebar.addEventListener('click', closeMenu);
+        sidebarBackdrop.addEventListener('click', closeMenu);
+    </script>
+</body>
+
+</html>
